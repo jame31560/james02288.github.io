@@ -1,0 +1,60 @@
+.successContent {
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=2c5a2cf31c693f5c15fb08135bf1adf2&amp;auto=format&amp;fit=crop&amp;w=1347&amp;q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 460px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  color: $green;
+  .flow {
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    i {
+      vertical-align: bottom;
+    }
+    hr {
+      width: 40px;
+      margin-left: -4px;
+      margin-right: -4px;
+      border-color: $green;
+    }
+  }
+  h2 {
+    margin-bottom: 30px;
+    font-size: 45px;
+    font-weight: bolder;
+  }
+  .continue {
+    width: 100%;
+    text-align: center;
+    button {
+      cursor: pointer;
+      background-color: #ffe180;
+      outline: none;
+      border: none;
+      color: $green;
+      font-size: 20px;
+      line-height: 24px;
+      padding: 15px 102px;
+      font-weight: bold;
+      @include mobile() {
+        position: absolute;
+        width: 100%;
+        bottom: 0%;
+        left: 0;
+      }
+    }
+  }
+  @include pad() {
+    margin-top: 0;
+  }
+}

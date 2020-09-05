@@ -1,0 +1,14 @@
+@mixin pad {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 414px) {
+    @content;
+  }
+}
+
+$green: #3f5d45;
+$white: #eaf0ed;
