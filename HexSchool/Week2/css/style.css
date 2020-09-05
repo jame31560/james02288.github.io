@@ -1,0 +1,254 @@
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0px auto;
+  width: 940px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+}
+
+.shopping-cart {
+  margin-left: 80px;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 215px;
+}
+
+.nav-menu-item {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.nav-menu-item a:link,
+.nav-menu-item a:hover,
+.nav-menu-item a:visited,
+.nav-menu-item a:active {
+  color: #3f5d45;
+  text-decoration: none;
+}
+
+.logo {
+  height: 40px;
+}
+
+.banner {
+  margin-top: 30px;
+}
+
+.content {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-list {
+  text-align: center;
+  width: 300px;
+  font-size: 24px;
+  line-height: 33px;
+  border: 1px solid #eaf0ed;
+  height: fit-content;
+}
+
+.category-list li {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.category-header {
+  color: #eaf0ed;
+  background-color: #3f5d45;
+}
+
+.category-item {
+  color: #3f5d45;
+  background-color: #fff;
+  border-top: 1px solid #eaf0ed;
+  cursor: pointer;
+  transition: background-color linear 0.13s;
+}
+
+.category-item:hover {
+  background-color: #eaf0ed50;
+}
+
+.category-item.active,
+.category-item.active:hover {
+  background-color: #eaf0ed;
+}
+
+.products {
+  width: 620px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  text-align: center;
+  border: 1px solid #eaf0ed;
+  margin-bottom: 20px;
+}
+
+.product-img {
+  height: 315px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tag {
+  padding: 10px;
+  background-color: #3f5d45;
+  height: 106px;
+  width: 36px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #eaf0ed;
+}
+.favorite {
+  height: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.product-info {
+  font-size: 20px;
+  line-height: 28px;
+  color: #3f5d45;
+  display: flex;
+}
+
+.product-title,
+.product-price {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-top: 1px solid #eaf0ed;
+  border-bottom: 1px solid #eaf0ed;
+}
+
+.product-title {
+  width: 173px;
+  font-weight: 300;
+}
+
+.product-price {
+  width: 127px;
+  font-weight: 500;
+  border-left: 1px solid #eaf0ed;
+}
+
+.add-to-cart {
+  font-size: 24px;
+  line-height: 33px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-weight: 700;
+  color: #3f5d45;
+  background-color: #eaf0ed;
+  transition: background-color linear 0.13s, color linear 0.13s;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background-color: #3f5d45;
+  color: #eaf0ed;
+}
+
+.pagination {
+  width: 620px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 60px;
+}
+
+.pagination-list {
+  display: flex;
+  align-items: center;
+  border: 1px solid #eaf0ed;
+}
+
+.pagination-item {
+  font-size: 20px;
+  line-height: 28px;
+  padding: 16px 24px;
+  color: #3f5d45;
+}
+
+.pagination-arrow {
+  padding: 18px;
+}
+
+.pagination-item,
+.pagination-arrow {
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color linear 0.13s;
+}
+
+.pagination-item:hover,
+.pagination-arrow:hover {
+  background-color: #eaf0ed;
+}
+
+.pagination-item.active,
+.pagination-item.active:hover {
+  color: #eaf0ed;
+  background-color: #3f5d45;
+}
+
+.pagination-item {
+  border-right: 1px solid #eaf0ed;
+}
+
+.pagination-item:nth-child(2) {
+  border-left: 1px solid #eaf0ed;
+}
+
+.card:nth-child(1) .product-img {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/student-week1/p-1.png");
+}
+
+.card:nth-child(2) .product-img {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/student-week1/p-2.png");
+}
+
+.card:nth-child(3) .product-img {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/student-week1/p-3.png");
+}
+
+.card:nth-child(4) .product-img {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/student-week1/p-4.png");
+}
+
+.card:nth-child(5) .product-img {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/student-week1/p-5.png");
+}
+
+.card:nth-child(6) .product-img {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/student-week1/p-6.png");
+}
